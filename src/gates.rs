@@ -256,6 +256,7 @@ pub fn quantum_fourier_transform(n: usize) -> Gate {
 }
 
 /// Convenience macro for testing a quantum gate.
+#[allow(unused_macros)]
 macro_rules! test_gate {
     ($computer:expr, $gate:expr, $from:expr, $to:expr) => {
         $computer.initialize($from);
